@@ -15,8 +15,6 @@ from functools import wraps
 
 import requests
 
-from allennlp.common.tqdm import Tqdm
-
 logger = logging.getLogger(__name__)  # pylint: disable=invalid-name
 
 CACHE_ROOT = Path(os.getenv('RESEARCH_CACHE_ROOT', Path.home() / '.research'))
